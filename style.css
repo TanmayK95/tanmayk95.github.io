@@ -1,0 +1,679 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@500&family=Source+Code+Pro&family=Ubuntu&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.temp{
+    width:98.7vw;
+    height: 5vw;
+    /* background-color: red; */
+    /* position: fixed; */
+    /* margin: 10vw; */
+    /* margin-left: 30vw; */
+    /* margin-top: -1vw; */
+    display: flex;
+    justify-content: center;
+    background-image: url(images/background2.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+.navbar{
+    width:98.7vw;
+    height: 5vw;
+    /* background-color: red; */
+    position: fixed;
+    /* margin: 10vw; */
+    /* margin-left: 30vw; */
+    margin-top: -5vw;
+    display: flex;
+    justify-content: center;
+    bottom: 1vw;
+    opacity: 0;
+    transition: ease-in-out 0.2s;
+    /* background-image: url(images/background2.jpg);
+    background-size: cover;
+    background-attachment: fixed; */
+}
+
+.navbar:hover{
+    opacity: 1;
+}
+
+#skill-icon{
+    margin-left: 0.05vw;
+    margin-top: 0vw;
+    width: 4vw;
+}
+#courses-icon{
+    margin-left: 0.05vw;
+    margin-top: 0vw;
+    width: 4vw;
+}
+
+.nav-element{
+    height: 4vw;
+    width: 4vw;
+    border-radius: 2vw;
+    /* background-color: black; */
+    /* margin-top: 0.1vw; */
+    margin: 0.5vw;
+    background-color: #00C6B2;
+    border:solid #00C6B2 2px; 
+    transition: ease-in-out 0.2s;
+}
+
+.nav-element:hover{
+    transform: scale(1.2);
+    background-color: aliceblue;
+}
+
+.nav-element h1{
+    color: #00C6B2;
+    font-size: 1vw;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    /* margin: auto; */
+    text-align: center;
+    margin-top: 1vw;
+    text-decoration: none;
+    
+}
+
+.nav-element img{
+    width: 3vw;
+    margin-left: 0.5vw;
+    margin-top: 0.5vw;
+    
+}
+
+.main-content{
+    /* background-color: yellow; */
+    /* background-color: rgb(37, 55, 69); */
+
+    width: 90vw;
+    height: 36vw;
+}
+
+.heading{
+    margin: auto;
+    align-self: center;
+    text-align: center;
+    color: #F2FAFF;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 900;
+    font-size: 4.5vw;
+    margin-top: 2vw;
+    margin-left: 5vw;
+}
+
+.container{
+    display: flex;
+    background-color: rgb(37, 55, 69);
+    height: 70vw;
+    width: 100%;
+}
+
+
+.about{
+    margin: auto;
+    margin-top: 6vw;
+    height: 55vh;
+    width: 90vw;
+    /* background-color: purple; */
+    display: flex;
+    justify-content: space-around;
+}
+
+.pic img{
+
+    height: 28vw;
+    border-radius: 10px;
+
+}
+
+.info{
+    width: 28vw;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 20vw;
+
+}
+
+.hi{
+    padding: 10px;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 4vw;
+    color: aliceblue;
+}
+
+.name{
+    padding: 10px;
+    font-weight: bold;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 2vw;
+    color: aliceblue;
+
+}
+.college{
+    padding: 10px;
+
+    font-family: 'Source Code Pro', monospace;
+    font-size: 1.5vw;
+    color: aliceblue;
+
+
+}
+
+.buttons button{
+    padding: 8px;
+    border: none;
+    border-radius: 50px;
+    background-color: #00C6B2;
+    color: black;
+    font-family: 'Source Code Pro', monospace;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 2vw;
+    transition: ease-in-out 0.2s;
+    
+}
+
+.buttons button:hover{
+    background-color: #FFF7D6;
+    color: black;
+}
+
+
+.main-content-contact{
+    /* background-color: aquamarine; */
+    width: 170vh;
+    height: 40vh;
+    margin: auto;
+    /* margin-top: 70px; */
+    display: flex;
+    justify-content: space-around;
+
+}
+
+#contact{
+    height: 100vh;
+    /* margin-top: 20vw; */
+}
+
+.linkedin{
+    /* background-color: #F9F871; */
+    height: 10vw;
+    width: 10vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 10px;
+    align-items: center;
+    box-shadow: inset 0 0 0 0 #424F65;
+    transition: ease-in-out 0.2s;
+    
+}
+
+.linkedin img{
+    width: 3vw;
+    /* margin-left: 25px; */
+    
+}
+
+.gmail{
+    /* background-color: aqua; */
+    height: 10vw;
+    width: 10vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 10px;
+    align-items: center;
+    box-shadow: inset 0 0 0 0 #424F65;
+    transition: ease-in-out 0.2s;
+
+
+}
+
+.gmail img{
+    width: 3vw;
+    border-radius: 20px;
+}
+
+.mobile{
+    /* background-color: blueviolet ; */
+    height: 10vw;
+    width: 10vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 10px;
+    align-items: center;
+    box-shadow: inset 0 0 0 0 #424F65;
+    transition: ease-in-out 0.2s;
+
+}
+
+.mobile img{
+    width: 3vw;
+    border-radius: 20px;
+
+
+}
+
+.number{
+    
+    margin-top: 4.5vw;
+    font-size: 1vw;
+    font-family: 'Source Code Pro', monospace;
+    color: aliceblue;
+    
+}
+.email{
+    color: aliceblue;
+    
+    margin-top: 4.5vw;
+    font-size: 1vw;
+    font-family: 'Source Code Pro', monospace;
+    
+}
+.linkedinid{
+    color: aliceblue;
+    margin-top: 4.5vw;
+    font-size: 1vw;
+    font-family: 'Source Code Pro', monospace;
+    
+}
+
+/* .container-contact{
+    background-color: rgb(48, 56, 69) ;
+} */
+
+.linkedin:hover{
+    /* background-color: #424F65;
+    box-shadow: inset 45vh 0 0 0 #424F65; */
+    transform: scale(1.2);
+
+
+}
+.gmail:hover{
+    /* background-color: #424F65;
+    box-shadow: inset 45vh 0 0 0 #424F65; */
+    transform: scale(1.2);
+
+
+}
+.mobile:hover{
+    /* background-color: #424F65;
+    box-shadow: inset 45vh 0 0 0 #424F65; */
+    transform: scale(1.2);
+}
+
+.main-content-skills{
+    /* background-color: aquamarine; */
+    width: 85vw;
+    height: 70vw;
+    margin: auto;
+    /* margin-top: 30px; */
+    /* display: flex;
+    justify-content: space-around; */
+
+}
+
+.row-skills{
+    display : flex;
+    width: 85vw;
+    height: 17vw;
+    justify-content: space-around;
+    /* background-color: antiquewhite; */
+
+    margin: auto;
+    margin-top: 2vh;
+    margin-left: 7vw;
+}
+
+.tile{
+    /* background-color: yellow; */
+    height: 12vw;
+    width: 12vw;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    border-radius: 10px;
+    align-items: center;
+    box-shadow: inset 0 0 0 0 #424F65;
+    transition: ease-in-out 0.2s;
+    
+}
+
+.tile img{
+    width: 5vw;
+    border-radius: 20px;
+    margin-top: 2vw;
+
+}
+
+.tile h1{
+    font-size: 1vw;
+    font-family: 'Source Code Pro', monospace;
+    text-align: center;
+    color: aliceblue;
+}
+
+#javascript-img{
+    width:9vw;
+}
+
+.skill-name{
+    margin-top: 2vw;
+    font-family: 'Source Code Pro', monospace;
+    color: aliceblue;
+}
+
+.tile:hover{
+    /* background-color: #424F65;
+    box-shadow: inset 40vh 0 0 0 #424F65; */
+    transform: scale(1.2);
+}
+
+.main-content-courses{
+    /* background-color: aquamarine; */
+    width: 170vh;
+    height: 90vh;
+    margin: auto;
+    margin-top: 5vw;
+    /* display: flex;
+    justify-content: space-around; */
+
+}
+.row-courses{
+    display : flex;
+    width: 85vw;
+    height: 17vw;
+    justify-content: space-around;
+    /* background-color: antiquewhite; */
+    margin: auto;
+    margin-top: 5vh;
+    margin-left: 7vw;
+}
+
+.course-name{
+    margin-top: 10px;
+    font-family: 'Montserrat', sans-serif;
+    color: aliceblue;
+    font-size: 1.2vw;
+    text-align: center;
+
+}
+
+.tile2{
+    height: 12vw;
+    width: 12vw;
+    display: flex;
+    flex-direction: column;
+    background-color: #D3FBD8;
+    margin-left: -27vw;
+    opacity: 0;
+    border-radius: 10px;
+    align-items: center;
+    box-shadow: inset 0 0 0 0 #424F65;
+    transition: ease-in-out 0.2s;
+}
+
+.tile2:hover{
+    opacity: 1;
+    transform: scale(1.2);
+}
+
+.tile2 img{
+    width: 3vw;
+    border-radius: 50px;
+    margin-top: 3vw;
+
+}
+
+.tile2 img:hover{
+    background-color: white;
+}
+
+.tile2 h3{
+    font-family: 'Source Code Pro', monospace;
+    color: #1d2835;
+    font-size: 0.8vw;
+    margin-top: 2vw;
+
+}
+
+
+
+/* .main-content-skills h1{
+    margin: auto;
+    align-self: center;
+    text-align: center;
+    color: #F2FAFF;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 900;
+    font-size: 8vh;
+    margin-top: -10vh;
+} */
+.main-content-courses h1{
+    margin: auto;
+    align-self: center;
+    text-align: center;
+    color: #F2FAFF;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 900;
+    font-size: 8vh;
+    margin-top: -35px;
+}
+
+.grade-obtained{
+    margin-top: 2.5vw;
+    font-size: 0.9vw;
+    font-family: 'Montserrat', sans-serif;
+    color: aliceblue;
+}
+
+.grade{
+    margin-top: 2.5vw;
+    font-size: 2vw;
+    font-family: 'Montserrat', sans-serif;
+    color: aliceblue;
+}
+
+.container-about{
+    display: flex;
+    /* background-color: blue; */
+    height: 45vw;
+}
+
+.achievements{
+    height: 31vw;
+    width: 36vw;
+    /* background-color: red; */
+    margin: auto;
+    margin-top: 3vw;
+    margin-left: 10vw;
+}
+
+.about-me{
+    margin: auto;
+    align-self: center;
+    text-align: center;
+    color: #F2FAFF;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 900;
+    font-size: 4.5vw;
+    margin-top: 0px;
+}
+.achievement-row{
+    height: 16vw;
+    width: 36vw;
+    /* background-color: aqua; */
+    display: flex;
+    margin: 1vw;
+}
+.achievement-tile{
+    height: 12vw;;
+    width: 10vw;
+    /* background-color: blue; */
+    margin: 10px;
+    transition: ease-out 0.2s;
+    border-radius: 10px;
+    border: solid;
+    border-color: #D3FBD8;
+    box-shadow: inset 0 0 0 0 #F2FAFF;
+
+}
+
+
+.achievement-tile:hover{
+    transform: scale(1.1);
+
+    box-shadow: inset 10vw 0 0 0 #F2FAFF;
+    border-color: black;
+    
+}
+.achievement-tile:hover > h1{
+    color: black;
+    
+}
+.achievement-tile:hover > h2{
+    color: black;
+    
+}
+
+.achievement-tile h1{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color: aliceblue;
+    margin-top: 2vw;
+    font-size: 1.2vw;
+}
+.achievement-tile h2{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color: aliceblue;
+    margin-top: 2vw;
+    font-size: 1vw;
+    
+}
+
+.about-paragraph{
+    /* background-color: red; */
+    height: 60vh;
+    width: 60vh;
+    margin: auto;
+    margin-left: 15vw;
+}
+
+.about-paragraph{
+   
+    color: aliceblue;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5vw;
+}
+
+
+/* .container-interests{
+    display: flex;
+    background-color: rgb(37, 55, 69);
+    height: 1060px;
+    width: 100%;
+
+} */
+
+
+
+
+/* .main-content-interests{
+    /* background-color: yellow; 
+    width: 100vw;
+    margin-left: 210px;
+    display: flex;
+    flex-direction: column;
+} */
+
+
+
+
+.interest-image{
+    width :8vw;
+    margin: 1vw;
+    box-shadow: inset 0 0 0 0 #F2FAFF;
+}
+
+#cubing{
+    width: 5vw;
+    height: 5vw;
+}
+#chess{
+    width: 5vw;
+    height: 5vw;
+}
+
+.interest-image:hover{
+    box-shadow: inset 8vw 0 0 0 #F2FAFF;
+
+}
+
+.row-interests{
+    width: 80vw;
+    height: 15vw;
+    /* background-color: red; */
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    margin-left: 8vw;
+    margin-top: 30vh;
+}
+
+
+
+#home{
+    background-image: url(images/background2.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+#skills{
+    background-image: url(images/background2.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+
+#interests{
+    background-image: url(images/background2.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+#about{
+    /* margin-top: 20vw; */
+    background-image: url(images/background2.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#courses{
+    background-image: url(images/background2.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#contact{
+    height: 50vh;
+    background-image: url(images/background2.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
